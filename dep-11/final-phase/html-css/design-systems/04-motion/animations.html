@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        h1 span{
+            display: inline-block;
+            animation-name: anim1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes anim1{
+            0%{
+                color: red;
+                font-size: 1rem;
+                transform: rotate(25deg);
+            }
+            25%{
+                color: green;
+                font-size: 2rem;
+            }
+            50%{
+                color: rgb(38, 141, 141);
+                
+            }
+            75%{
+                color: blueviolet;
+            }
+            80%{
+                color: brown;
+                transform: rotate(-360deg);
+            }
+            100%{
+                color: black;
+            }
+        }
+        img{
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            margin-top: 200px;
+            animation-name: scooby;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes scooby {
+            from{
+                left: 0;
+            }
+            50%{
+                left: calc(100% - 200px);
+                transform: rotateY(0deg);
+            }
+            51%{
+                left: calc(100% - 200px);
+                transform: rotateY(180deg);
+            }
+            to{
+                left: 0;
+                transform: rotateY(180deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        <span>Animations</span>
+    </h1>
+    <div id="gif">
+        <span><img src="scooby.gif" alt="scooby"></span>
+    </div>
+</body>
+</html>

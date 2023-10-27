@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Position</title>
+    <style>
+        #container {
+            height: 400px;
+            border: 1px solid black;
+        }
+
+        #container h2 {
+            background-color: yellow;
+            padding: 20px;
+            margin: 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        #wrapper {
+            border: 1px solid black;
+            margin-top: 10px;
+            overflow-x: scroll;
+        }
+
+        #semester-container {
+            width: 300%;
+            height: 400px;
+        }
+
+        .semester {
+            position: relative;
+            height: 100%;
+            width: calc(100% / 3);
+            float: left;
+        }
+
+        .sem-title{
+            background-color: yellow;
+            padding: 10px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            width: 50px;
+            top: 0;
+            bottom: 0;
+        }
+
+        .sem-title span{
+            display: inline-block;
+            position: absolute;
+            top: 70%;
+            left: 25%;
+            transform-origin: left top;
+            transform: rotate(-90deg);
+            /* background-color: red; */
+        }
+
+        .sem-description {
+            margin-left: 70px;
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sticky Position</h1>
+    <div id="container">
+        <h2>Hi Sticky!</h2>
+    </div>
+    <h2>Semester Overview</h2>
+    <div id="wrapper">
+        <div id="semester-container">
+            <div class="semester">
+                <div class="sem-title">
+                    <span>1<sup>st</sup>Semester</span>
+                </div>
+                <div class="sem-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum expedita, commodi deserunt aperiam hic repellat optio, nostrum et voluptate numquam aliquid quo, ipsa perspiciatis iste. Voluptas ut a voluptate minima.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum expedita, commodi deserunt aperiam hic repellat optio, nostrum et voluptate numquam aliquid quo, ipsa perspiciatis iste. Voluptas ut a voluptate minima.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum expedita, commodi deserunt aperiam hic repellat optio, nostrum et voluptate numquam aliquid quo, ipsa perspiciatis iste. Voluptas ut a voluptate minima.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum expedita, commodi deserunt aperiam hic repellat optio, nostrum et voluptate numquam aliquid quo, ipsa perspiciatis iste. Voluptas ut a voluptate minima.
+                </div>
+            </div>
+            <div class="semester">
+                <div class="sem-title">
+                    <span>2<sup>nd</sup>Semester</span>
+                </div>
+                <div class="sem-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum expedita, commodi deserunt aperiam hic repellat optio, nostrum et voluptate numquam aliquid quo, ipsa perspiciatis iste. Voluptas ut a voluptate minima.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum expedita, commodi deserunt aperiam hic repellat optio, nostrum et voluptate numquam aliquid quo, ipsa perspiciatis iste. Voluptas ut a voluptate minima.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum expedita, commodi deserunt aperiam hic repellat optio, nostrum et voluptate numquam aliquid quo, ipsa perspiciatis iste. Voluptas ut a voluptate minima.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum expedita, commodi deserunt aperiam hic repellat optio, nostrum et voluptate numquam aliquid quo, ipsa perspiciatis iste. Voluptas ut a voluptate minima.
+                </div>
+            </div> 
+            <div class="semester">
+                <div class="sem-title">
+                    <span>3<sup>rd</sup>Semester</span>
+                </div>
+                <div class="sem-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum expedita, commodi deserunt aperiam hic repellat optio, nostrum et voluptate numquam aliquid quo, ipsa perspiciatis iste. Voluptas ut a voluptate minima.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum expedita, commodi deserunt aperiam hic repellat optio, nostrum et voluptate numquam aliquid quo, ipsa perspiciatis iste. Voluptas ut a voluptate minima.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum expedita, commodi deserunt aperiam hic repellat optio, nostrum et voluptate numquam aliquid quo, ipsa perspiciatis iste. Voluptas ut a voluptate minima.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum expedita, commodi deserunt aperiam hic repellat optio, nostrum et voluptate numquam aliquid quo, ipsa perspiciatis iste. Voluptas ut a voluptate minima.
+                </div>
+            </div>                              
+        </div>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, atque? Ad odio praesentium nihil perferendis dolorem velit, ab tempora repellendus fugiat quaerat ex harum excepturi maiores magnam voluptatibus illo sapiente.
+    Rerum alias maiores, laboriosam quasi corporis officiis aspernatur libero dolorum voluptas debitis aut possimus illum! Quia minus sit eum. Corporis perspiciatis nam aperiam quaerat iste. Inventore quasi magnam obcaecati dicta!
+    Amet minus modi obcaecati minima dolorum voluptatum sint similique eligendi ab officiis, suscipit nobis hic sequi a odit autem quia. Nihil minima explicabo ducimus iste eaque officiis labore aspernatur voluptatem.
+    Cumque numquam ex, facilis est deleniti odit in, quaerat hic sit cum veniam quibusdam quo dolores ratione asperiores eligendi id ducimus fugit, ipsum doloribus. Et numquam deserunt animi voluptatum distinctio!
+    Sequi dolor esse voluptate nulla quod culpa aspernatur nostrum illum possimus ducimus ipsa cum repudiandae ut, eius dolores veritatis laborum, rerum eligendi debitis? Nostrum, veniam illum expedita ipsa in consequuntur!
+    Aliquid iusto magni, sed ducimus similique inventore reiciendis, placeat facilis officia esse impedit rerum amet commodi ipsam cupiditate, mollitia ipsum. Tempore, sequi est et quasi velit nam rem veritatis enim?
+    Deleniti minus maxime officia quisquam repudiandae nam recusandae cum culpa eum dolore! Exercitationem perferendis, repellat ea rerum ducimus sint dolor necessitatibus quod voluptate ab. Magni veritatis qui aliquid labore inventore.
+    Et nam illum possimus doloremque, debitis error nulla exercitationem, adipisci ipsam explicabo veritatis. Nobis soluta quisquam dolores, vero autem molestias nisi minima delectus! Placeat cum, facilis quidem at autem deserunt.
+    Quo esse similique laborum laboriosam, possimus dicta, rem dolore ullam praesentium nostrum sequi quis necessitatibus! Eius eum delectus explicabo eligendi vel dignissimos, iste error amet molestias voluptas pariatur qui quam?
+    Doloremque, ratione? Repellendus nemo ad ab ipsam numquam dolor, asperiores quaerat fugiat doloremque earum similique, nobis a voluptatem aspernatur adipisci aliquam nulla ea possimus dolorem harum enim officia eos quas.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, minima corrupti commodi harum aut odit quas non quidem veniam facere numquam nisi nam magni similique dolorem temporibus ab facilis libero?
+    Saepe temporibus est atque quibusdam quae enim exercitationem similique obcaecati nemo molestias, quaerat placeat cupiditate, doloremque accusantium dolorem architecto inventore dolorum odit impedit nobis qui aperiam quas dolor? Voluptatibus, dolor.
+    Eveniet repellat animi rerum ea deleniti similique amet ab obcaecati unde natus doloribus saepe, aliquid fugiat vero. Eum consequuntur corporis repellendus eos incidunt vitae, earum quae aliquam fuga animi est!
+    Vel quae sapiente repudiandae quod nisi repellendus, dolor voluptate eveniet ducimus consequatur eius enim natus doloribus, expedita omnis fugiat. Harum cumque modi hic quas quam nobis nemo quos illum asperiores.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quisquam odio voluptatum, alias laborum, laudantium corporis magnam cumque ut tempora voluptas provident voluptate aut numquam illo fuga sequi ducimus. Asperiores.
+    Laborum molestiae id, cum ipsam voluptatem architecto corporis minus ullam beatae incidunt officiis at animi dolores libero omnis doloribus voluptates iusto adipisci, placeat dolorem, cumque perferendis dignissimos deleniti? Molestias, non!
+    Explicabo officia vitae neque, nobis alias sed nostrum perferendis corrupti fugit optio. Explicabo excepturi iusto error provident consequuntur labore. Veritatis incidunt ad provident repudiandae voluptatum quaerat non numquam iure ratione?
+    Eos cum qui similique praesentium quis ad distinctio, ullam sit aliquid officiis vitae cumque laboriosam eveniet nulla minima est. Molestias facere magni voluptatum ratione dignissimos ullam libero tenetur repellat blanditiis?
+    Aut ipsum facere fuga assumenda nemo nostrum sequi. Sequi quibusdam sapiente sed exercitationem sint assumenda fuga magni ratione reiciendis necessitatibus, quos nemo earum adipisci laudantium officia in nisi consequuntur commodi?
+    </p>
+</body>
+</html>

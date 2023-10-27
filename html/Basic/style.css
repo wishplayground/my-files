@@ -1,0 +1,87 @@
+header{
+  background-color: rgb(51, 50, 50);
+
+  text-align: center;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 10px;
+}
+header h2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: rgb(51, 50, 50);
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 10px 30px;
+}
+.logo{
+  width: 220px;
+}
+.container{
+  padding: 5px 0 5px;
+}
+#menu-items a{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  font-size: 18px;
+  position: relative;
+  text-decoration: none;
+
+}
+#menu-items a::after{
+  content: '';
+  width: 0px;
+  height: 3px;
+  background: #f00000;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+#menu-items a:hover::after{
+  width: 100%;
+}
+#image-block{
+  background-color: rgb(36, 35, 36);
+  justify-content: center;
+}
+#image-block img{
+  margin-left: auto;
+  display: block;
+  width: 90%;
+  border-radius: 110px;
+  transition: transform 0.4s ease-in-out;
+}
+
+#contact-items{
+  list-style: none;
+  display: flex;
+  background-color: rgb(51, 50, 50);
+  justify-content: center;
+  padding: 30px;
+  margin: 10px 0px;
+}
+#contact-items li{
+  transition: transform 0.5s ease-in-out;
+}
+#contact-items a{
+  padding: 40px;
+}
+#contact-items li:hover{
+  transform: scale(1.3);
+}
+#contact h2{
+  display: block;
+  background-color: rgb(51, 50, 50);
+  list-style: none;
+  color: aliceblue;
+  
+}

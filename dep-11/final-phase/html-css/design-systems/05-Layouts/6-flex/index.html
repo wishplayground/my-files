@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        #container{
+            width: 500px;
+            height: 500px;
+            background-color: yellow;
+            display: flex;
+            /* flex-direction: row; *//* by default */
+            /* justify-content: center; */
+            /* align-content: end; */
+            /* align-items: center; */
+            row-gap: 10px;
+            align-content: ;
+
+        }
+
+        .child{
+            width: 250px;
+            height: 100px;
+            flex-shrink: 1;
+        }
+        #container-2{
+            width: 500px;
+            height: 500px;
+            background-color: yellow;
+            display: flex;
+            /* flex-direction: row;/* by default 
+            flex-wrap: wrap; */
+            /* flex-flow: row wrap;
+            align-content: center;
+            justify-content: start; */
+            /* align-content: end; */
+            align-items: baseline;
+        }
+        .child1{
+            width: 250px;
+            height: 100px;
+            /* flex-shrink: 0; */
+        }
+        .child:first-child{
+            background-color: red;
+            /* align-self: baseline; */
+        }
+        .child:nth-child(2){
+            background-color: blue;
+            height: 75px;
+        }
+        .child:last-child{
+            background-color: black;
+            /* align-self: flex-end; */
+        }
+        .child1:first-child{
+            background-color: red;
+            flex: 150px 2 0;
+            /* align-self: baseline; */
+        }
+        .child1:nth-child(2){
+            background-color: blue;
+            height: 75px;
+        }
+        .child1:last-child{
+            background-color: black;
+            /* align-self: flex-end; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex Layout</h1>
+    <div id="container">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+    <br>
+    <div id="container-2">
+        <div class="child1"></div>
+        <div class="child1"></div>
+        <div class="child1"></div>
+    </div>
+
+</body>
+</html>

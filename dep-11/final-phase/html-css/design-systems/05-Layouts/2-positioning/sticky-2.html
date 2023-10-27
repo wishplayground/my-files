@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h1{
+            font-weight: bold;
+            font-size: 3rem;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        #scroll-port{
+            width: 100%;
+            height: 450px;
+            border: 2px solid black;
+            overflow-x: scroll;
+        }
+        #container{
+            width: 300%;
+            height: 100%;
+            position: relative;
+            /* background-color: aqua; */
+
+        }
+        .semester{
+            background-color: yellow;
+            width: calc(100% /3);
+            height: 100%;
+            display: inline-block;
+            
+        }
+        .semester .title{
+            background-color: rgba(245, 101, 101, 0.637);
+            transform-origin: left top; 
+            transform: translateY(450px) rotate(-90deg);
+            position: sticky;
+            width: 40px;
+            left: 0;
+        }
+        .semester .title h2{
+            font-size: 1.7rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: rgb(14, 235, 14);
+            padding: 10px;
+            letter-spacing: 1px;
+            position: absolute;
+            width: 450px;
+            text-align: center;
+        }
+        .semester .content{
+            background-color: blanchedalmond;
+            text-align: justify;
+            margin-left: 48px;
+        }
+        .semester:nth-child(2){
+            left: calc(100%  /3);
+            top: -449px;
+        }
+        .semester:last-child{
+            left: calc(100% /3 * 2 );
+            top: calc();
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Sticky Position in action</h1>
+    <div id="scroll-port">
+        <div id="container">
+            <div class="semester">
+                <div class="title">
+                    <h2>1 <sup>st </sup>Semester</h2>
+                </div>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum earum aut dolor, reiciendis hic similique, fugiat corrupti enim quam vitae ipsum velit nulla non? Aliquam doloribus ex accusamus ipsam commodi!
+                    Architecto animi saepe perferendis ratione magni quis non natus nihil blanditiis praesentium libero ex commodi et, fugiat obcaecati fugit nam delectus dolorum quisquam. Sed quasi vitae facere rerum? Quos, asperiores!
+                    Iste itaque nulla similique aliquam dolores voluptates obcaecati error quasi recusandae modi maiores dignissimos quaerat aspernatur, voluptate perspiciatis commodi id totam laudantium neque quos? Voluptates harum repellat fugiat sunt molestiae.
+                    Laudantium, accusantium cumque! Iusto consectetur inventore cumque consequuntur minus blanditiis magnam esse nemo natus. Eius voluptates atque eaque minima obcaecati officia natus quisquam blanditiis maiores velit! Ipsam eaque nihil hic.
+                    </p>
+                </div>
+            </div>
+            <div class="semester">
+                <div class="title">
+                    <h2>2 <sup>rd </sup>Semester</h2>
+                </div>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum earum aut dolor, reiciendis hic similique, fugiat corrupti enim quam vitae ipsum velit nulla non? Aliquam doloribus ex accusamus ipsam commodi!
+                    Architecto animi saepe perferendis ratione magni quis non natus nihil blanditiis praesentium libero ex commodi et, fugiat obcaecati fugit nam delectus dolorum quisquam. Sed quasi vitae facere rerum? Quos, asperiores!
+                    Iste itaque nulla similique aliquam dolores voluptates obcaecati error quasi recusandae modi maiores dignissimos quaerat aspernatur, voluptate perspiciatis commodi id totam laudantium neque quos? Voluptates harum repellat fugiat sunt molestiae.
+                    Laudantium, accusantium cumque! Iusto consectetur inventore cumque consequuntur minus blanditiis magnam esse nemo natus. Eius voluptates atque eaque minima obcaecati officia natus quisquam blanditiis maiores velit! Ipsam eaque nihil hic.
+                    </p>
+                </div>
+            </div>
+            <div class="semester">
+                <div class="title">
+                    <h2>3 <sup>rd </sup>Semester</h2>
+                </div>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum earum aut dolor, reiciendis hic similique, fugiat corrupti enim quam vitae ipsum velit nulla non? Aliquam doloribus ex accusamus ipsam commodi!
+                    Architecto animi saepe perferendis ratione magni quis non natus nihil blanditiis praesentium libero ex commodi et, fugiat obcaecati fugit nam delectus dolorum quisquam. Sed quasi vitae facere rerum? Quos, asperiores!
+                    Iste itaque nulla similique aliquam dolores voluptates obcaecati error quasi recusandae modi maiores dignissimos quaerat aspernatur, voluptate perspiciatis commodi id totam laudantium neque quos? Voluptates harum repellat fugiat sunt molestiae.
+                    Laudantium, accusantium cumque! Iusto consectetur inventore cumque consequuntur minus blanditiis magnam esse nemo natus. Eius voluptates atque eaque minima obcaecati officia natus quisquam blanditiis maiores velit! Ipsam eaque nihil hic.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

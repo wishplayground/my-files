@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="rootDep" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.controller.DpartmentManagementController">
+   <children>
+      <Label layoutX="141.0" layoutY="14.0" text="EMS Manage Department">
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnNewDep" layoutX="495.0" layoutY="49.0" mnemonicParsing="false" onAction="#btnNewDepOnAction" text="+ NEW Department" />
+      <VBox layoutX="28.0" layoutY="68.0" prefHeight="60.0" prefWidth="415.0" spacing="10.0">
+         <children>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Name ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtDepName" />
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Button fx:id="btnSaveDep" mnemonicParsing="false" onAction="#btnSaveDepOnAction" text="SAVE" />
+                  <Button fx:id="btnDelDep" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnDelDepOnAaction" text="DELETE" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <TableView fx:id="tblDep" layoutX="28.0" layoutY="177.0" prefHeight="215.0" prefWidth="563.0">
+        <columns>
+          <TableColumn prefWidth="92.0" text="ID" />
+          <TableColumn prefWidth="296.0" text="NAME" />
+            <TableColumn prefWidth="174.0" text="Number of Employees" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

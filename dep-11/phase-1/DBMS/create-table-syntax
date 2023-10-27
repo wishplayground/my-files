@@ -1,0 +1,31 @@
+CREATE TABLE <table name> (col definition, 
+	col definition,
+	.....
+	[tabel definition],
+	[tabel definition],
+	...);
+	
+
+column definition = 
+<col name> <data type> [DEFAULT <default value> [PRIMARY KEY | UNIQUE | NOT NULL]
+
+eg:- 
+	address		VARCHAR(250)	DEFAULT 'panadura'	NOT NULL
+	marriedStatus	BOOLEAN 				NOT NULL
+	contact		VARCHAR(15)				UNIQUE
+	nic		VARCHAR(10)				PRIMARY KEY
+	profile_pic	BLOB(2500)	DEFAULT NULL		UNIQUE
+	
+
+table constrait definitions =>
+	CONSTRAINT	<identifier> PRIMARY KEY(comma separated column separated column list)
+				     UNIQUE	(comma separated column separated column list)
+				     FOREIGN KEY(comma separated column separated column list)
+				     
+				     REFERENCES <table name> (comma separated column separated column list)
+				     [<ON UPDATE | ON DELETE> <CASCADE | SET NULL | RESTRICT | NO ACTION>]
+	
+
+	
+	
+	

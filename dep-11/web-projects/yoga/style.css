@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+#menubar ul{
+    display: flex;
+    list-style: none;
+    vertical-align: middle;
+}
+img{
+    width: 200px;
+}
+#menubar ion-icon{
+    font-size: 48;
+}

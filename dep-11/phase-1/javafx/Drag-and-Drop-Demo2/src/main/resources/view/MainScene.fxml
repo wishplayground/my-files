@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="rootPane" prefHeight="623.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainSceneController">
+   <children>
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="595.0" prefWidth="620.0" spacing="10.0">
+         <children>
+            <Label text="Drag and Drop Demo 2">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label text="Enter Todo works">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtTodo" onAction="#txtTodoOnAction" promptText="Enter todo task" />
+            <ListView fx:id="lvTodo" onDragDetected="#lvTodoOnDragDetected" prefHeight="202.0" prefWidth="620.0" />
+            <Label text="Drag here Completed Tasks">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ListView fx:id="lvCompleted" onDragDropped="#lvCompletedOnDragDropped" onDragOver="#lvCompletedOnDragOver" prefHeight="232.0" prefWidth="620.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform CSS</title>
+    <style>
+        #box{
+            width:550px;
+            height: 550px;
+            background-color: blueviolet;
+            position: relative;
+        }
+        #inner-box{
+            width:200px;
+            height: 200px;
+            background-color: rgb(101, 226, 43);
+            /* transform: rotate(10deg); *//* rotate clockwise */
+            /* transform: rotateX(180deg); */
+            /* transform: rotateY(180deg); */
+
+            /* transform: scale(1.1); */
+            /* transform: scaleX(1.1) scaleY(0.5); */
+        
+            /* transform: skew(-30deg); */
+            /* transform: skewX(45deg) skewY(-45deg); */
+
+            /* transform: translate(10px,10px); */
+
+            /* transform: translate(100%,100%); */
+            /* position: absolute;
+            top: 50%;
+            left: 50%; */
+            /* transform: translateX(-50%) translateY(-50%); */
+            /* transform: translate(-50%, -50%); */
+
+            transform-origin: right bottom;
+            transform: rotate(190deg);
+
+
+
+        }
+        #inner-box::before{
+            content: "";
+            display: block;
+            width: 35px;
+            height: 40px;
+            background-color: red;
+        }
+
+</style>
+</head>
+<body>
+    <h1>Transform CSS Property</h1>
+    <div id="box">
+        <div id="inner-box"></div>
+    </div>
+</body>
+</html>

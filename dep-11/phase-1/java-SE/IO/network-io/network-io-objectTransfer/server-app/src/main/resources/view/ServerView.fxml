@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootServer" prefHeight="530.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.ServerController">
+   <children>
+      <TableView fx:id="tblServer" layoutX="83.0" layoutY="93.0" prefHeight="416.0" prefWidth="577.0">
+        <columns>
+          <TableColumn prefWidth="119.0" text="ID" />
+          <TableColumn prefWidth="293.0" text="Name" />
+            <TableColumn prefWidth="164.0" text="Address" />
+        </columns>
+      </TableView>
+      <Label layoutX="262.0" layoutY="14.0" text="Server App" AnchorPane.bottomAnchor="480.0" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="261.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

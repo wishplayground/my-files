@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="root" prefHeight="434.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainSceneController">
+   <children>
+      <Label alignment="CENTER" layoutX="234.0" layoutY="14.0" text="JavaFx Control Basic" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <VBox layoutX="23.0" layoutY="81.0" prefHeight="118.0" prefWidth="633.0" spacing="10.0">
+         <children>
+            <HBox prefHeight="37.0" prefWidth="527.0" spacing="10.0">
+               <children>
+                  <ToggleButton fx:id="tglVisibility" mnemonicParsing="false" onAction="#tglVisibilityOnAction" prefHeight="24.0" prefWidth="96.0" selected="true" text="Visibility" />
+                  <ToggleButton fx:id="tglDisability" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#tglDisabilityOnAction" prefHeight="24.0" prefWidth="104.0" text="Disability" />
+                  <ToggleButton fx:id="tglTooltip" layoutX="89.0" layoutY="10.0" mnemonicParsing="false" onAction="#tglTooltipOnAction" prefHeight="24.0" prefWidth="95.0" selected="true" text="Tooltip" />
+                  <Button fx:id="btnFocus" mnemonicParsing="false" onAction="#btnFocusOnAction" prefHeight="24.0" prefWidth="69.0" text="Focus" />
+                  <RadioButton fx:id="rbDefault" mnemonicParsing="false" onAction="#rbDefaultOnAction" prefHeight="18.0" prefWidth="124.0" text="Cursor Default">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="Cursor" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rbHand" mnemonicParsing="false" onAction="#rbHandOnAction" prefHeight="18.0" prefWidth="117.0" text="Cursor Hand" toggleGroup="$Cursor" />
+               </children>
+            </HBox>
+            <TextField fx:id="txtsomthing" promptText="Enter Something Here" />
+            <Label fx:id="lblOutput" alignment="CENTER" prefHeight="16.0" prefWidth="646.0" style="-fx-background-radius: 10; -fx-background-color: lightblue;" text="Output" textFill="#eb26b1">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <HBox layoutX="23.0" layoutY="202.0" prefHeight="136.0" prefWidth="554.0" spacing="20.0">
+         <children>
+            <VBox prefHeight="58.0" prefWidth="258.0" spacing="10.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <CheckBox fx:id="chkBackground" mnemonicParsing="false" onAction="#chkBackgroundOnAction" text="Background Color" />
+                  <ColorPicker fx:id="clrBackground" onAction="#clrBackgroundOnAction" />
+                  <CheckBox fx:id="chkBorderWidth" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#chkBorderWidthOnAction" text="Border Setting" />
+                  <HBox prefHeight="37.0" prefWidth="340.0" spacing="20.0">
+                     <children>
+                        <Label fx:id="lblWidth" text="Boader Width" />
+                        <Spinner fx:id="spnBorderWidth" prefHeight="24.0" prefWidth="61.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Rectangle fx:id="shpRect" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="135.0" stroke="BLACK" strokeType="INSIDE" width="241.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Slider fx:id="slrOpacity" layoutX="19.0" layoutY="380.0" prefHeight="16.0" prefWidth="554.0" />
+      <Label layoutX="19.0" layoutY="357.0" text="Boader Width" />
+      <Label fx:id="lblValue" layoutX="488.0" layoutY="365.0" text="Value:" />
+      <ColorPicker fx:id="clrBorder" layoutX="23.0" layoutY="326.0" onAction="#clrBorderOnAction" />
+   </children>
+</AnchorPane>

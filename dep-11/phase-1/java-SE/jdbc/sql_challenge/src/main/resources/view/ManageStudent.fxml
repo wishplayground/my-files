@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootStudent" prefHeight="716.0" prefWidth="899.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.controller.ManageStudentController">
+   <children>
+      <VBox layoutX="37.0" layoutY="77.0" prefHeight="200.0" prefWidth="521.0" spacing="20.0">
+         <children>
+            <HBox prefHeight="46.0" prefWidth="339.0" spacing="44.0">
+               <children>
+                  <Label text="STUDENT ID" />
+                  <TextField fx:id="txtId" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="339.0" spacing="20.0">
+               <children>
+                  <Label text="STUDENT NAME" />
+                  <TextField fx:id="txtName" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="56.0" prefHeight="46.0" prefWidth="339.0" spacing="20.0">
+               <children>
+                  <Label text="STUDENT CARD" />
+                  <TextField fx:id="txtCard" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="142.0" prefHeight="46.0" prefWidth="339.0" spacing="75.0">
+               <children>
+                  <Button fx:id="btnSave" defaultButton="true" mnemonicParsing="false" onAction="#btnSaveOnAction" text="SAVE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnDelete" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" text="DELETE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="150.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <Label alignment="CENTER" layoutX="429.0" layoutY="14.0" prefHeight="35.0" prefWidth="436.0" text="Manage Students" textFill="#202e9a" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="587.0">
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <HBox layoutX="657.0" layoutY="77.0" prefHeight="100.0" prefWidth="200.0" />
+      <VBox layoutX="628.0" layoutY="77.0" prefHeight="75.0" prefWidth="235.0" spacing="20.0">
+         <children>
+            <Button fx:id="btnNewStu" mnemonicParsing="false" onAction="#btnNewStuOnAction" prefHeight="29.0" prefWidth="238.0" text="+ NEW STUDENT">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnLoadCsv" mnemonicParsing="false" onAction="#btnLoadCsvOnAction" prefHeight="29.0" prefWidth="236.0" text="LOAD STUDENT FROM CSV">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <TableView fx:id="tblStu" layoutX="37.0" layoutY="315.0" onDragDropped="#tblStuOnDragDropped" onDragOver="#tblStuOnDragOver" prefHeight="388.0" prefWidth="824.0">
+        <columns>
+          <TableColumn prefWidth="96.0" text="STUDENT ID" />
+          <TableColumn prefWidth="453.0" text="NAME" />
+            <TableColumn prefWidth="120.0" text="CARD" />
+            <TableColumn prefWidth="154.0" text="CHALLENGE STATUS" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

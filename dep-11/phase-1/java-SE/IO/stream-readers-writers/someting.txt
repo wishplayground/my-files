@@ -1,0 +1,19 @@
+To change access for collaborators in a GitHub repository, you'll need to have the necessary permissions. Repository access is controlled by the repository owner or administrators with admin privileges. Here's how you can change access for collaborators:
+
+    Access the Repository:
+    You need to be logged into your GitHub account and have access to the repository for which you want to change collaborator access.
+
+    Navigate to the Repository:
+    Go to the main page of the repository you want to modify.
+
+    Click on "Settings":
+    In the upper-right corner of the repository page, click on the "Settings" tab.
+
+    Select "Collaborators & Teams":
+    In the left sidebar, under "Options," click on "Collaborators & Teams."
+
+    Search for Collaborator:
+    In the "Collaborators" section, start typing the GitHub username, email address, or name of the person you want to add or modify access for. GitHub will provide suggestions as you type.
+
+    Modify Collaborator Access:
+    Once you find the collaborator you want to modify access for, click on their name. This will open a dialog where you can choose the level of access you

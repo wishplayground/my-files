@@ -1,0 +1,48 @@
+/* Define a custom button style */
+#btnLogin{
+    -fx-background-color: #66bae8; /* Normal button background color */
+    -fx-text-fill: #fff; /* Text color */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 15px;
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+/* Button hover effect */
+#btnLogin:hover {
+    -fx-background-color: #2980b9; /* Button background color on hover */
+    -fx-background-radius: 10px;
+}
+
+/* Button pressed effect */
+#btnLogin:pressed {
+    -fx-background-color: #1f618d; /* Button background color when pressed */
+    -fx-translate-y: 3px; /* Move the button 2px down when pressed */
+    -fx-translate-x: 3px; /* Move the button 2px to the right when pressed */
+}
+
+#btnBack{
+    -fx-background-color: #5cb0ee; /* Normal button background color */
+    -fx-text-fill: #fff; /* Text color */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 15px;
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+/* Button hover effect */
+#btnBack:hover {
+    -fx-background-color: #29b971; /* Button background color on hover */
+    -fx-background-radius: 10px;
+}
+
+/* Button pressed effect */
+#btnBack:pressed {
+    -fx-background-color: #105d88; /* Button background color when pressed */
+    -fx-translate-y: 5px; /* Move the button 2px down when pressed */
+    -fx-translate-x: 5px; /* Move the button 2px to the right when pressed */
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aligning 2</title>
+    <style>
+        #outer{
+            width: 450px;
+            height: 450px;
+            background-color: greenyellow;
+            position: relative;
+        }
+        #inner{
+            width: 0px;
+            height: 0px;
+            background-color: red;
+            position: relative;
+            border: 100px solid black;
+            border-left-color: red;
+            border-top-color: greenyellow;
+            /* left: 100%;
+            transform: translateX(-100%); */
+            /* left: 50%;
+            transform: translateX(-50%); */
+            /* top: 50%;
+            transform: translateY(-50%); */
+            /* top:100%;
+            transform: translateY(-100%); */
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%)/* translateX(-50%) translateY(-50%) */;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aligning 1</h1>
+    <div id="outer">
+        <div id="inner"></div>
+    </div>
+</body>
+</html>

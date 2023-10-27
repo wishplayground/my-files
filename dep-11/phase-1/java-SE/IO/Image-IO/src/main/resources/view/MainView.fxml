@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="root" prefHeight="460.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.controller.MainViewController">
+   <children>
+      <Label layoutX="161.0" layoutY="14.0" text="Image Input Output">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imvView" fitHeight="232.0" fitWidth="299.0" layoutX="151.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnOpen" defaultButton="true" layoutX="196.0" layoutY="327.0" mnemonicParsing="false" onAction="#btnOpenOnAction" prefHeight="45.0" prefWidth="92.0" style="-fx-background-radius: 10;" text="Open">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSave" layoutX="335.0" layoutY="327.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="45.0" prefWidth="92.0" style="-fx-background-color: green; -fx-background-radius: 10;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtLoad" layoutX="54.0" layoutY="391.0" prefHeight="24.0" prefWidth="497.0" />
+      <Button fx:id="btnLoad" layoutX="245.0" layoutY="424.0" mnemonicParsing="false" onAction="#btnLoadOnAction" prefHeight="30.0" prefWidth="116.0" text="Load Image" />
+   </children>
+</AnchorPane>

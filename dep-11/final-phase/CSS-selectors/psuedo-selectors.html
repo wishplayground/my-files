@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo-selectors</title>
+    <style>
+        /* nested css */
+        /* ul{
+            & li:first-child{
+                color: red;
+            }
+            & li:last-child{
+                color: green;
+            }
+            & li:nth-child(4){
+                color: blue;
+                font-weight: bold;
+            }
+            & li:nth-last-child(2){
+                color: rgb(110, 76, 82);
+                font-size: large;
+                font-style: oblique;
+            }
+        } */
+        /* Combinator seperated by space */
+       /*  #ul-1 li:first-child{
+            color: blue;
+        }
+        #ul-1 li:nth-child(4){
+            color: red;
+        }
+        ol li:nth-child(2n+1){
+            color: darkred;
+        }
+
+        #ul-2 li:nth-child(odd){
+            color: blue;
+        }
+
+        #ul-2 li:nth-child(even){
+            color: rgb(84, 136, 36);
+            font-weight: bold;
+        } */
+
+        
+        #ul-1 first-child{
+            color: blue;
+        }
+        #ul-1 :nth-child(4){
+            color: red;
+        }
+        ol :nth-child(2n+1){
+            color: darkred;
+        }
+
+        #ul-2 :nth-child(odd){
+            color: blue;
+        }
+
+        #ul-2 :nth-child(even){
+            color: rgb(84, 136, 36);
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>psuedo-selectors</h1>
+    <h3>Nested CSS </h3>
+    <ul id="ul-1">
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        <li>Fourth</li>
+        <li>Fifth</li>
+        <li>Sixth</li>
+        <li>Seventh</li>
+        <li>Eighth</li>
+    </ul>
+    <h3>Dscendant Combinator</h3>
+    <ol>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        <li>Fourth</li>
+        <li>Fifth</li>
+        <li>Sixth</li>
+        <li>Seventh</li>
+        <li>Eighth</li>
+    </ol>
+    <ul id="ul-2">
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        <li>Fourth</li>
+        <li>Fifth</li>
+        <li>Sixth</li>
+        <li>Seventh</li>
+        <li>Eighth</li>
+    </ul>
+    
+</body>
+</html>

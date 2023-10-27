@@ -1,0 +1,23 @@
+
+CREATE TABLE customer (
+	id VARCHAR(5) PRIMARY KEY,
+	name VARCHAR(50) NOT NULL,
+	address VARCHAR(300) DEFAULT 'Panadura' NOT NULL
+);
+
+CREATE TABLE Item (
+	code VARCHAR(10) PRIMARY KEY,
+	description VARCHAR(80) NOT NULL,
+	brand VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Employee (
+	nic VARCHAR(10) PRIMARY KEY,
+	name VARCHAR(30) NOT NULL,
+	address VARCHAR(100) NOT NULL,
+	contact VARCHAR(15) UNIQUE
+);
+
+
+INSERT INTO customer (id, name, address) VALUES ('C-001','Ruwan','Panadura'), 		('C-002','Nihal','Kurunegala'),
+('C-003','Muditha','Moratuwa');

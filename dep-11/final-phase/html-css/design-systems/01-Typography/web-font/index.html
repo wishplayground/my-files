@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            font-family: 'Dancing Script', cursive,sans-serif;
+        }
+        @font-face {
+            font-family: 'wishva' /* "wishva" */;
+            src: url(/fonts/TiltNeon-Regular.ttf) format('truetype');
+            font-weight: 100 400;
+        }
+        @font-face {
+            font-family: 'wishva' /* "wishva" */;
+            /* src: url(/fonts/TiltNeon-Regular-VariableFont_XROT\,YROT.ttf) format('truetype'); */
+            src: local('Times New Roman');
+            font-weight: 700;
+        }
+        @font-face {
+            font-family: 'wishva';
+            src: url('/fonts/TiltNeon-Regular.ttf') format('truetype');
+            font-style: italic;
+
+        }
+        /* @font-face {
+            font-family: 'wishva';
+            src: url('/fonts/TiltNeon-Regular.woff') format('woff')
+                 url('/fonts/TiltNeon-Regular.woff2') format('woff2');
+            font-style: italic;
+
+        } */
+        h1:last-of-type{
+            font-family: wishva;
+            font-weight: 100;
+        }
+        h1:nth-of-type(2){
+            font-family: wishva;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Typography</h1>
+    <h1>Typography2</h1>
+    <h1>Typography3</h1>
+</body>
+</html>

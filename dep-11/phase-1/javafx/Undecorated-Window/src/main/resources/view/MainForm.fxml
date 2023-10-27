@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainformController">
+   <children>
+      <ImageView fitHeight="274.0" fitWidth="381.0" layoutX="110.0" layoutY="93.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Image/3-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="183.0" layoutY="26.0" text="Welcome to dep 11" textFill="#c64511">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

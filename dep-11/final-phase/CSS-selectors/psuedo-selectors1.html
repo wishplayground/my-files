@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo Selectors 1</title>
+
+    <style>
+        div h3:first-child{
+            color: red;
+            font-size: 1.2rem;
+        }
+        ul :first-child{
+            color: blue;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        /* div :not(p){
+            color: goldenrod;
+        } */
+    </style>
+</head>
+<body>
+    <h1>Psuedo Selectors 1</h1>
+    <div>
+        <p>Paragraph</p>
+        <h3>Header 1</h3>
+        <p>Paragraph</p>
+        <h3>Header 2</h3>
+        <p>Paragraph</p>
+        <h3>Header 3</h3>
+    </div>
+    <ul>
+        <li>Fist</li>
+        <li>second</li>
+        <li>Third</li>
+    </ul>
+    
+</body>
+</html>

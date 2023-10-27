@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+    </style>
+</head>
+<body>
+    <h1>Specificity Algorithm</h1>
+    <p>
+        Lorem <span id="my-id" class="my-class1 my-class2" title="tooltip">ipsum
+        </span>ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo pariatur nihil voluptate quam labore adipisci commodi maiores nulla, minima expedita eum aliquid, et harum doloremque tenetur est! Nesciunt, quo repellat!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aspernatur sint deleniti aut, et laudantium error voluptatibus voluptatem consectetur, molestias eligendi rem beatae eveniet similique reprehenderit ex soluta nihil ad?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, atque debitis impedit, aperiam voluptate ad, nostrum quibusdam quod nihil maxime error ullam quos praesentium eos consequuntur quaerat quas officiis sit.
+    </p>
+    <p>/* 0-0-1 */ <br>
+        span{ <br>
+            color: red; <br>
+        } <br><br>
+        /* 0-1-0 */ <br>
+        .my-class1{ <br>
+            color: darkblue; <br>
+        } <br><br>
+        /* 1-0-0 */ <br>
+        #my-id{ <br>
+            color: green;<br>
+        }<br><br>
+        /* 0-1-0 */ <br>
+        [title]{<br>
+            color: palevioletred;<br>
+        }<br><br>
+        /* 0-1-0 */ <br>
+        .my-class2{<br>
+            color: blueviolet;<br>
+            font-size: large;<br>
+        }</p>
+</body>
+</html>

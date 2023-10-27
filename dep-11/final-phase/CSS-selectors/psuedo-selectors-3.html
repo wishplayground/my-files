@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo-selectors-3</title>
+    <style>
+        ul:first-of-type :last-child:hover{
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: red;
+        }
+        button:hover{
+            background-color: aquamarine;
+        }
+        h1:hover{
+            color: rgb(95, 128, 46);
+            transform: scale(1.2);
+        }
+        input[type="text"]:focus{
+            border: 5px solid rgb(181, 216, 53);
+            outline: none/* 5px solid blue */;
+        }
+        button:disabled{
+            background-color: rgb(192, 112, 14);
+            padding: 5px;
+            border-radius: 10px;
+            outline: 1px solid darkcyan;
+            border: none;
+            color: white;
+        }
+        input[type="radio"]{
+            opacity: 0.5;
+        }
+        input[type="radio"]:checked{
+            /* visibility: hidden; */
+            opacity: 1;
+        }
+
+        ul:last-of-type:focus-within{
+            border: 2px solid rgb(17, 19, 17);
+        }
+
+        a:link{
+            color: green;
+        }
+
+        a:visited{
+            color: rgb(16, 113, 192);
+        }
+    </style>
+</head>
+<body>
+    <h1>psuedo-selectors-3</h1>
+
+    <ul>
+        <li>:first-child</li>
+        <li>:first-of-type</li>
+        <li>:last-child</li>
+        <li>:last-of-type</li>
+        <li>:nth-child</li>
+        <li>:nth-of-type</li>
+        <li>:nth-last-child</li>
+        <li>nth-last-of-type</li>
+        <li>:not</li>
+        <li>:hover</li>
+    </ul>
+
+    <ul>
+        <li>
+            :active 
+            <button>Click Me
+            </button>
+        </li>
+        <li>
+            :Focus
+            <input type="text">
+        </li>
+        <li>
+            :outline
+        </li>
+        <li>
+            Disabled
+            <button>Ok</button>
+            <button disabled>Cancel</button>
+        </li>
+        <li>Checked
+            <label>
+                <input name="gender" type="radio"> Male
+            </label>
+            
+            <input id="rdo-female" name="gender" type="radio"> 
+            <label for="rdo-female">Female</label>
+        </li>
+        <li>
+            Focus Withing
+        </li>
+    </ul>
+
+    <ol>
+        <li><a> a </a></li>
+        <li><a href="#">Link</a>
+
+        </li>
+        <li><a href="http://www.abc.com">Visited </a>
+
+        </li>
+    </ol>
+</body>
+</html>

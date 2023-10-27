@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="root1" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainSceneController">
+   <children>
+      <Label layoutX="29.0" layoutY="25.0" prefHeight="31.0" prefWidth="557.0" text="See New Arrival In your Area Click Here">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="206.0" fitWidth="219.0" layoutX="209.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/d5xoarn-91dbc2fd-10a7-4e8d-b5ea-b4569ebc58e2.gif" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnEnter" layoutX="300.0" layoutY="303.0" mnemonicParsing="false" onAction="#btnEnterOnAction" prefHeight="42.0" prefWidth="80.0" style="-fx-background-color: lightgreen; -fx-background-radius: 8;" text="Enter">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="70.0" layoutY="314.0" text="Click Here to Enter ==&gt;&gt;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

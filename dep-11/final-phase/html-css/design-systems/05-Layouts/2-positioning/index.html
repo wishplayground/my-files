@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        static{
+            left: 100px;
+            right: 200px;
+        }
+        #relative{
+            background-color: yellow;
+            position: relative;
+            /* left: 100px; */
+            right: -100px;
+            /* top: -100px; */
+            bottom: 30px;
+            
+        }
+        #outer{
+            background-color: yellowgreen;
+            width: 300px;
+            height: 300px;
+            color: white;
+            position: relative;
+            
+        }
+        #inner{
+            background-color: red;
+            width: 150px;
+            height: 150px;
+        }
+
+        #inner-inner{
+            background-color: rgb(72, 154, 156);
+            width: 70px;
+            /*height: 70px; */
+            position: absolute;
+            right: 0;
+            left: 0;
+        }
+        #my-ad{
+            background-color: rgba(49, 49, 235, 0.685);
+            padding: 10px;
+            border: 5px solid yellow;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Static
+        </li>
+        <li>Relative</li>
+        <li>Absolute</li>
+        <li>Fixed</li>
+        <li><a href="sticky.html" target="_blank">Sticky (CSS3)</a></li>
+    </ul>
+
+    <h2 id="static">Static Position</h2>
+    <h2 id="relative">Relative Position</h2>
+    <div id="outer">
+        <div id="inner">
+            <div id="inner-inner">INNER INNER</div>
+            <p>I'm Paragraph this is absolute positioning</p>
+        </div>
+    </div>
+    
+
+    <div id="my-ad">
+        <h2>You Won 50000$. Click to claim</h2>
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, explicabo delectus sunt fuga perferendis eos quia ut hic beatae reiciendis nemo numquam nihil est nulla, nisi corporis cum ea natus.</p>
+</body>
+</html>

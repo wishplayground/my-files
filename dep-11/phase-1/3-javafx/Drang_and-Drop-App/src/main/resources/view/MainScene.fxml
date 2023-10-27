@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainSceneController">
+   <children>
+      <Rectangle fx:id="shpRect" arcHeight="5.0" arcWidth="5.0" fill="#f2ffe8" height="269.0" layoutX="321.0" layoutY="93.0" stroke="BLACK" strokeType="INSIDE" width="265.0" />
+      <Label layoutX="14.0" layoutY="24.0" text="Drag and Drop Demo">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDragMe" alignment="CENTER" layoutX="41.0" layoutY="121.0" onMouseDragged="#lblDragMeOnMouseDragged" onMousePressed="#lblDragMeOnMousePressed" onMouseReleased="#lblDragMeOnMouseReleased" prefHeight="63.0" prefWidth="101.0" style="-fx-background-color: green;" text="Drag Me" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

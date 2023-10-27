@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Column</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        h1{
+            padding: 0 10px;
+        }
+        #container-1{
+            height: 300px;
+            background-color: yellow;
+            
+        }
+        .col{
+            width: 33.33%;
+            height: 100%;
+        }
+        #container-1 .col:first-child{
+            display: inline-block;
+            background-color: blue;
+        }
+        #container-1 .col:nth-child(2){
+            display: inline-block;
+            background-color: aquamarine;
+        }
+        #container-1 .col:last-child{
+            display: inline-block;
+            background-color: red;
+        }
+
+        #container-2 .col{
+            height: 300px;
+            background-color: rgb(140, 0, 255);
+            float: right;
+        }
+        #container-2 .col:first-child{
+            /* float: left; */
+            background-color: rgb(0, 255, 128);
+        }
+        #container-2 .col:nth-child(2){
+            /* float: left; */
+            background-color: rgb(122, 124, 12);
+        }
+        #container-2 .col:last-child{
+            /* float: left; */
+            background-color: rgb(185, 73, 8);
+        }
+        #container-2::after{
+            content: "";
+            clear: both;
+        }
+        h1 span{
+            background-color: aqua;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            transform: rotate(-35deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Column</h1>
+    <div id="container-1">
+        <div class="col">
+            Column1
+        </div><div class="col">
+            Column 2
+        </div><div class="col">
+            Column 3
+        </div>
+    </div>
+    <br>
+    <div id="container-2">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <!-- Clear float use ::after  other wise below content also comes to contact with float-->
+    </div>
+    <h1>Hello <span> Inline Block!</span></h1>
+</body>
+</html>

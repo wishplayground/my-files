@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <link rel="stylesheet" href="reset.css">
+</head>
+<style>
+    /* *{
+        box-sizing: border-box;
+    } */
+    #outer{
+        width: 250px;
+        height: 250px;
+        border: 5px solid blue;
+    }
+    .inner{
+        width: 100%;
+        height: 50%;
+        border: 20px solid red;
+        border-top-color: red;
+        border-right-color: green;
+        border-bottom-color: black;
+        border-left-color: white;
+    }
+    .inner:first-child{
+        background-color: yellowgreen;
+    }
+    .inner:last-child{
+        background-color: orange;
+    }
+    p span{
+        background-color: yellow;
+        padding: 20px;
+        margin: 10px ;
+        border: 20px solid red;
+    }
+
+</style>
+<body><div id="app-bar">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium fuga corrupti exercitationem dolorum a nihil dolores quos! Quae pariatur quaerat, praesentium numquam error repudiandae mollitia eius placeat at. Autem, iusto.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quia delectus placeat cumque odio consectetur accusamus aperiam, mollitia, voluptatibus eum rerum tempora. Sint magni, eligendi nemo ratione aliquid aliquam eaque?
+</div>
+    <h1>Box Model</h1>
+    <p>This is all <span>about</span> the box model</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti reiciendis doloremque beatae voluptatum, placeat amet ut, eos sapiente ipsa tempore nisi, neque unde sed voluptatibus eum autem harum? Natus, iure?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea possimus iste tenetur magni, vitae non labore ex error libero eligendi in similique nihil laborum veritatis voluptatibus cumque, voluptatem ipsam earum?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, facilis earum? Fugiat earum veritatis architecto quisquam esse corrupti, rerum eius dolorem, suscipit iste in facilis modi facere ipsa accusamus hic.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus labore eum numquam saepe laudantium ducimus tempore perspiciatis beatae repellendus asperiores, quod eaque impedit deserunt. Recusandae doloribus amet sunt at odio.
+    </p>
+    <div id="outer">
+        <div class="inner"></div>
+        <div class="inner"></div>
+    </div>
+    
+</body>
+</html>

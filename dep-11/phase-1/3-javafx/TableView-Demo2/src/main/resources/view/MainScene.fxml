@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="702.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MAinSceneController">
+   <children>
+      <Label layoutX="21.0" layoutY="23.0" prefHeight="37.0" prefWidth="235.0" text="Table View Demo2">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <GridPane hgap="5.0" layoutX="14.0" layoutY="110.0" prefHeight="185.0" prefWidth="615.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="110.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="305.0" minWidth="10.0" prefWidth="150.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="628.0" minWidth="10.0" prefWidth="572.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="Student ID :" />
+            <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="Student Name :" GridPane.rowIndex="1" />
+            <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="Programme :" GridPane.rowIndex="2" />
+            <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="Contact Number :" GridPane.rowIndex="3" />
+            <TextField fx:id="txtId" editable="false" GridPane.columnIndex="1" />
+            <TextField fx:id="txtName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtNumber" onAction="#txtNumberOnAction" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ComboBox fx:id="cmbProgramme" maxWidth="1.7976931348623157E308" prefHeight="24.0" prefWidth="224.0" promptText="Select Programme" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="40.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="btnSave" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnSaveOnAction" style="-fx-background-color: lightgreen; -fx-background-radius: 10;" text="Save">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnDelete" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnDeleteOnAction" style="-fx-background-color: red; -fx-background-radius: 10;" text="Delete" textFill="#eeeeee">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+      <Button fx:id="btnNewStu" layoutX="676.0" layoutY="71.0" mnemonicParsing="false" onAction="#btnNewStuOnAction" style="-fx-background-color: darkgreen;" text="+ New Student" textFill="#fff8f8" AnchorPane.rightAnchor="14.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tvStud" layoutX="21.0" layoutY="318.0" prefHeight="379.0" prefWidth="790.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="14.0">
+        <columns>
+          <TableColumn prefWidth="104.0" text="ID" />
+          <TableColumn prefWidth="153.0" text="Name" />
+            <TableColumn prefWidth="312.0" text="PROGRAMME" />
+            <TableColumn prefWidth="220.0" text="CONTACT NUMBER" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

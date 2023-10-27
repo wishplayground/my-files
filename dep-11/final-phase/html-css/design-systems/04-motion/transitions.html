@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        h1 span{
+            transition-property: color;
+            transition-duration: 800ms;
+        }
+        h1 span:hover{
+            color: red;
+            cursor: pointer;
+        }
+        #circle{
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            border-radius: 150px;
+            position: relative;
+            transition-property: all;
+            transition-duration: 2000ms;
+            /* transition-property: transform, background-color;
+            transition-duration: 3500ms, 3500ms; */
+            /* transition: transform 3500ms, background-color 3500ms; */
+            
+        }
+        #inner-circle{
+            border: 2px solid black;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: aqua;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: -25px;
+            /* transition-property: background-color;
+            transition-duration: 3500ms; */
+            transition: background-color 3500ms;
+        }
+        #circle:hover{
+            transform: rotate(270deg) scale(1.2);    
+            background-color: blueviolet; 
+        }
+        #circle:hover #inner-circle{
+            background-color: red;
+        }
+
+        #rectangle{
+            border: 2px solid black;
+            width: 350px;
+            height: 300px;
+            background-image: url(wall.jpg);
+            background-size: cover;
+            
+            overflow: hidden;
+        }
+        #over-layer{
+            border: 1px solid black;
+            background-color: rgba(0, 0, 0, 0.322);
+            width: 100%;
+            height: 100%;
+            position:relative;
+            transition: all;
+            transition-duration: 1.5s;
+            top: 100%;
+            
+        }
+        #icon{
+            width: 100%;
+            height: 100%;
+            font-size: 100px;
+            color: azure;
+            /* background-color: yellow; */
+            position: relative;
+            top: -100%;
+            transition-property: all;
+            transition-duration: 1.5s;
+        }
+        #icon ion-icon{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #rectangle:hover #over-layer{
+            top: 0;
+        }
+        #rectangle:hover #icon{
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <span>Transitions</span>
+    </h1>
+    <div id="circle">
+        <div id="inner-circle"></div>
+    </div>
+    <br><br>
+    <div id="rectangle">
+        <div id="icon"><ion-icon name="settings-outline"></ion-icon></div>
+        <div id="over-layer">
+
+        </div>
+    </div>
+    
+</body>
+</html>

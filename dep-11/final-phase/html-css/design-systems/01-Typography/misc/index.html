@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography Misc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Open Sans', sans-serif; 
+        }
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        h3{
+            font-size: 1.5rem;
+        }
+        h4,h5,h6{
+            font-size: 1rem;
+        }
+
+        #parent{
+            font-size: 20px;
+            line-height: 3rem;
+        }
+        #child{
+            font-size: 2rem; /* 16px X 2 = 32 */
+            font-size: 2em;/* 20px X 2 = 40 */
+        }
+        #responsive-h1{
+            font-size: 6vw;
+            letter-spacing: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4 (has default font size)</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <h1 id="responsive-h1">Responsive Heading</h1>
+    <div id="parent">
+        Lorem <mark id="child">ipsum dolor</mark> sit amet consectetur adipisicing elit. Laborum eligendi id, et nesciunt vero qui enim rem corporis doloribus itaque iste accusantium similique soluta aliquid voluptatibus ratione dolorem architecto aspernatur.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur suscipit delectus itaque possimus voluptas optio, dignissimos tempore sapiente mollitia quasi nam accusamus asperiores perspiciatis, eum sunt esse a fuga minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dicta cum quo? Architecto nihil voluptates magnam vel culpa quidem possimus, blanditiis eum dolorem ratione ducimus excepturi voluptatem ipsum quas itaque.
+    </div>
+</body>
+</html>

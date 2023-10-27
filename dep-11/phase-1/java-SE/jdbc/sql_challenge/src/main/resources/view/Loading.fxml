@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="rootLoad" prefHeight="169.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.controller.LoadingController">
+   <children>
+      <ProgressBar fx:id="pbLoading" layoutX="16.0" layoutY="85.0" prefHeight="23.0" prefWidth="571.0" progress="0.0" />
+      <Label layoutX="192.0" layoutY="24.0" text="Loading DataBase">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo-selector-4</title>
+    <style>
+        p{
+            background-color: yellow;
+        }
+        p::before{
+            content: "Before the paragraph";
+            background-color: red;
+            color: white;
+            padding: 5px;
+        }
+        p::after{
+            content: "After paragraph";
+            background-color: blue;
+            color: white;
+            padding: 5px;
+        }
+        p:hover::after{
+            background-color: aqua;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>psuedo-selector-4</h1>
+    <h2>Psuedo Elements ( :: )</h2>
+    <p><!-- before -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nihil adipisci repellendus rem quod, non sunt optio vitae nisi! Odio, voluptas accusantium! Magni accusamus doloribus cumque a. Fuga, ullam enim?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum reiciendis quas iusto odit sint sapiente porro velit officia, et eaque earum quia ipsam recusandae. Dolore fugit accusamus dignissimos facilis quaerat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tempora consequatur officia delectus ullam laboriosam fuga in? Omnis dicta ab reprehenderit modi quae, nesciunt suscipit pariatur, quis qui aut doloremque!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores accusamus ratione quae dicta corrupti numquam expedita hic nulla? Omnis officiis doloribus fugiat cumque nemo hic asperiores odit et dolorum aspernatur!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, blanditiis soluta placeat reiciendis quia distinctio excepturi quo odit voluptatibus culpa cupiditate impedit. Fugit facilis, tenetur illo aut sed id dolorem!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, fugiat similique inventore suscipit corrupti cum aperiam expedita facilis necessitatibus placeat consequatur facere fuga maiores aliquid nisi labore velit error earum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quia mollitia, aliquid beatae laborum nulla vitae, officia, neque quae praesentium consectetur sit corrupti architecto facere? Odio harum unde atque beatae?
+        <!-- After -->
+    </p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+/* Reset some default styles and apply a basic font */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 60px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav li {
+    margin: 0 0px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    padding: 20px;
+}
+
+.project {
+    margin: 20px;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+}
+
+/* Add more CSS styles for further customization */

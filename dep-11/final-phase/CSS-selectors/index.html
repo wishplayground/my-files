@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selecor</title>
+    <style>
+        ul *{
+            color: rgb(97, 92, 92);
+        }
+        #my-id1{
+            color: blueviolet;
+        }
+        #my-id2{
+            color: brown;
+            
+        }
+        li:hover{
+            color: rgb(116, 98, 22);
+            font-weight: bold;
+            cursor: grab;
+        }
+        /* #my-id1:hover,
+        #my-id2:hover,#id2:hover{
+            
+        } */
+        .my-class{
+            background-color: aquamarine;
+        }
+
+        [title]{
+            font-style: italic;
+            color: orange;
+        }
+        [title="Tooltip"]{
+            color: rgb(30, 158, 13);
+        }
+        p{
+            background-color: rgb(233, 182, 121);
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <a href="psuedo-selectors1.html" target="_blank"><h2> Navigate : Psuedo Selectors 1</h2></a>
+    <a href="psuedo-selectors-2.html" target="_blank"><h2> Navigate : Psuedo Selectors 2</h2></a>
+    <a href="psuedo-selectors-3.html" target="_blank"><h2> Navigate : Psuedo Selectors 3</h2></a>
+    <a href="psuedo-selector-4.html" target="_blank"><h2> Navigate : Psuedo Selectors 4</h2></a>
+    <h1 title="This is a tooltip">CSS Selectors</h1>
+    <ul> <!-- unoedered list -->
+        <li>Universal selector</li>
+        <li id="my-id1">ID Selector</li>
+        <li id="my-id2">Class Selector</li>
+        <li class="my-class">Attribute Selector</li>
+        <li class="my-class">Type Selector</li>
+        <li>
+            <a href="psuedo-selectors.html" target="_blank">Sudo selector</a>
+            <ul>
+                <li>Pseudo Class Selector</li>
+                <li>Pseudo Element Selector</li>
+            </ul>
+        </li>
+    </ul>
+    <!-- multiple Selectors -->
+    <a href="specificity-Algo.html" target="_blank"><p style="font-size: 1.2rem; color: red; font-weight: bold;">Compoud Selector = Combine Multiple Selectors</p></a>
+    <h2 title="Tooltip">CSS Combinators</h2>
+    <ul id="id2">
+        <li>Descendant Combinator (Whitespase)</li>
+        <li>Child Combinator(>)</li>
+        <li>Adjacent Sibling Combinator(+)</li>
+        <li>General Sibling Combinator(~)</li>
+    </ul>
+    <p style="font-size: 1.2rem; color: red; font-weight: bold;">
+        Complex selectors = Selectors + Combinators<br>
+        Grouping Selectors = Comma seperated Selector List
+    </p>
+    <h2>CSS Seperators</h2>
+    <p style="font-size: 1.2rem; color: red; font-weight: bold;">Name Seperator</p>
+</body>
+</html>
